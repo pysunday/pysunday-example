@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+if [ $# -gt 0 ]; then
+    grep -E ${1} --exclude-dir=node_modules --exclude-dir=.git --exclude-dir=dist --exclude-dir=build --exclude-dir=test --exclude-dir=docs ./ -rn
+else
+    echo '搜索内容必填'
+fi

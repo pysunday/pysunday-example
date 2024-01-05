@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+defurl="chrome://newtab"
+osascript openChrome.applescript "${1-$defurl}" "Google Chrome"

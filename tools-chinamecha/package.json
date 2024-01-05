@@ -1,0 +1,14 @@
+{
+  "name": "chinamecha",
+  "type": "tools",
+  "version": "1.0.0",
+  "description": "机电一体化网供应商信息采集",
+  "bin": [
+    "chinamecha"
+  ],
+  "keywords": [
+    "sunday",
+    "tools"
+  ],
+  "author": "ct"
+}

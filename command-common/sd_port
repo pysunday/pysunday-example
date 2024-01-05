@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+if [ $# -gt 0 ]; then
+    pid=`lsof -i:${1} -P -t -sTCP:LISTEN`
+    if [ -z $pid ]; then
+        exit
+    fi
+    echo 端口号\(port\)：${1}
+    echo 进程号\(pid\): ${pid}
+    script=`ps -o command -p ${pid} | sed -n 2p`
+    echo 执行命令：${script}
+    dir=`lsof -p ${pid} | awk '$4=="cwd" {for (i=9; i<=NF; i++) printf "%s ", $i}'`
+    echo 执行目录：${dir}
+else
+    echo '端口号必填'
+fi

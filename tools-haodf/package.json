@@ -1,0 +1,14 @@
+{
+  "name": "haodf",
+  "type": "tools",
+  "version": "1.0.0",
+  "description": "好大夫在线医生信息采集",
+  "bin": [
+    "haodf"
+  ],
+  "keywords": [
+    "sunday",
+    "tools"
+  ],
+  "author": "ct"
+}
